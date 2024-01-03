@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(65, 65, 65);
+        }
+        header {
+            border: 2px solid white;
+            border-radius: 20px;
+            width: 90%;
+            height: 150px;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(110, 108, 108);
+        }
+        .name {
+            display: block;
+            color: yellow;
+            font-size: 40px;
+            font-weight: 900;
+
+        }
+        .nav-list {
+            color: white;
+            font-weight: 600;
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .nav-a {
+            color: white;
+            text-decoration: none;
+        }
+        .list-items:hover {
+            color: yellow;
+            scale: 1.1;
+        }
+        .sec-1 {
+            border: 2px solid white;
+            border-radius: 20px;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(110, 108, 108);
+        }
+        .div1 {
+            color: whitesmoke;
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .p1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: yellow;
+        }
+        .p2 {
+            font-size: 25px;
+            font-weight: 400;
+            /* border: 1px solid black; */
+        }
+        .div2 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .img1,
+        .img2 {
+            width: 500px;
+            height: 190px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px 1px rgb(255, 251, 251);
+        }
+        .sec2 {
+            border: 2px solid white;
+            border-radius: 20px;
+            width: 90%;
+            margin: auto;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            background-color: rgb(110, 108, 108);
+            color: yellow;
+        }
+        .div3 {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+            font-size: 20PX;
+            font-weight: 500;
+        }
+        .div4 {
+            width: 90%;
+            margin: auto;
+            margin-top: 80px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .logo-img {
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .sec3 {
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: rgb(110, 108, 108);
+            color: whitesmoke;
+            padding-bottom: 20px;
+        }
+        .p3 {
+            color: yellow;
+            margin-top: 20px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .div5 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .p4 {
+            width: 90%;
+            margin: auto;
+        }
+        .div6 {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 40px;
+        }
+        .div6-all {
+            height: 300px;
+            width: 500px;
+            border: 1px solid white;
+            background-color: rgb(96, 94, 94);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .div6-img {
+            height: 70px;
+            width: 70px;
+            /* border: 1px solid white; */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .div6-img-{
+            margin-left: 55px;
+        }
+        .div6-img--{
+            margin-left: 35px;
+        }
+        .div-6-p {
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: yellow;
+        }
+        .div-6-p1 {
+            font-size: 30px;
+            color: yellow;
+        }
+        .div6-p-man {
+            height: 50px;
+            width: 420px;
+            /* border: 1px solid black; */
+            /* display: inline; */
+            font-size: 30px;
+        }
+        @media(max-width:60em) {
+            .div6-all {
+                width: 300px;
+            }
+            .div6-p-man {
+                font-size: 20px;
+                width: 280px;
+            }
+            .div3 {
+                font-size: 15px;
+            }
+            .name {
+                font-size: 20px;
+            }
+            .nav-list {
+                font-size: 10px;
+            }
+            .img1,
+            .img2 {
+                width: 300px;
+            }
+            .p1 {
+                font-size: 20px;
+            }
+            .p2 {
+                width: 300px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="nav-a"><span class="name">POTFOLIO</span></a>
+        <nav class="nav_bar">
+            <ul class="nav-list">
+                <a href="#" class="nav-a">
+                    <li class="list-items">Home</li>
+                </a>
+                <a href="#" class="nav-a">
+                    <li class="list-items">Education</li>
+                </a>
+                <a href="#" class="nav-a">
+                    <li class="list-items">Skills</li>
+                </a>
+                <a href="#" class="nav-a">
+                    <li class="list-items">About</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sec-1">
+        <div class="div1">
+            <p class="p1">Hello i am dev.</p>
+            <p class="p2">i am a web desiner and web devloper.</p>
+        </div>
+        <div class="div2">
+            <img src="/banner/logo-design-services-500x500.webp" alt="" class="img1">
+            <img src="/banner/web-development-image.webp" alt="" class="img2">
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div class="div3">
+            <p>[ MOBILE NUMBER : 7027650700 ]</p>
+            <p>[ GMAIL : devsaini143278@gmail.com ]</p>
+            <p>[ DOWNLOAD CV ]</p>
+        </div>
+        <div class="div4">
+            <a href="#"><img class="logo-img " src="/icon/download.jpg" alt=""></a>
+            <a href="#"><img class="logo-img " src="/icon/Facebook_icon_2013.svg.png" alt=""></a>
+            <a href="#"><img class="logo-img " src="/icon/linkedin-icon-3.svg"alt=""></a>
+            <a href="#"><img class="logo-img " src="/icon/Instagram_logo_2016.svg.webp" alt=""></a>
+
+        </div>
+    </section>
+
+    <section class="sec3">
+        <p class="p3">About me.</p>
+        <div class="div5">
+            <p class="p4">FrontendDevelopment "In my portfolio's 'My Services' section, I specialize in frontend
+                development with
+                expertise in HTML, CSS, JavaScript, and responsive web design, ensuring visually appealing and
+                user-friendly websites."</p>
+            <p class="p4">Backend Development "In my portfolio's 'My Services' section, Back-end developers ensure the
+                website
+                performs correctly, focusing on databases, back-end logic, application programming interface (APIs),
+                architecture, and servers.</p>
+        </div>
+        <div class="div6">
+            <div class="div6-1 div6-all ">
+                <div>
+                    <img src="icon-design.svg" alt="" class="div6-img div6-img-  ">
+                    <p class="div-6-p1">Website desiner</p>
+
+
+                </div><br>
+                <div class="div6-p-man">
+                    <p>The most modern and high-quality design made at a professional level.</p>
+                </div>
+            </div>
+            <div class="div6-1 div6-all ">
+                <div>
+                    <img src="icon-dev (1)s.svg" alt="" class="div6-img div6-img- ">
+                    <p class="div-6-p">Website devloper</p>
+                </div>
+                <div class="div6-p-man">
+                    <p>High-quality development of sites at the professional level.</p>
+                </div>
+            </div>
+            <div class="div6-1 div6-all ">
+                <div>
+                    <img src="icon-app.svg" alt="" class="div6-img div6-img--  " >
+                    <p class="div-6-p">Mobiles apps</p>
+                </div>
+                <div class="div6-p-man">
+                    <p>Professional development of applications for iOS and Android</p>
+                </div>
+            </div>
+            <div class="div6-1 div6-all ">
+                <div>
+                    <img src="icon-dev.svg" alt="" class="div6-img div6-img-- ">
+                    <p class="div-6-p">Photography</p>
+                </div>
+                <div class="div6-p-man">
+                    <p>I make high-quality photos of any category at a professional level</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
